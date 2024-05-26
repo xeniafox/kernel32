@@ -47,7 +47,7 @@ ignoreErrors = ["additional-script-loading-error"]
 [Languages.en-us.params]
   sitename = "Notes from Cyberspace"
   defaultColor = "dark"
-  description = "The personal writings of a amateur computer scientist"
+  description = "The personal writings of an amateur computer scientist"
   mainSections = ["posts"]
   toc = true
   tocOpen = false
