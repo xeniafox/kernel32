@@ -1,0 +1,114 @@
+baseURL = 'https://kernel32.xyz'
+languageCode = 'en-us'
+title = 'kernel32'
+
+defaultContentLanguage = "pt-br"
+
+enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"]
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+    [markup.tableOfContents]
+      startLevel = 2
+      endLevel = 4
+      ordered = false
+
+[Languages.en-us]
+  languageName = "English"
+  languageCode = "en-us"
+  contentDir = "content/en"
+  weight = 2
+
+  [Languages.en-us.menu]
+  [[Languages.en-us.menu.main]]
+    pageRef = "/"
+    name = "home"
+    url = "/"
+    weight = 10
+  [[Languages.en-us.menu.main]]
+    pageRef = "posts"
+    name = "posts"
+    url = "/posts/"
+    weight = 20
+  [[Languages.en-us.menu.main]]
+    pageRef = "about"
+    name = "about"
+    url = "/about/"
+    weight = 30
+
+[Languages.en-us.params]
+  sitename = "Notes from Cyberspace"
+  defaultColor = "dark"
+  description = "The personal writings of a amateur computer scientist"
+  mainSections = ["posts"]
+  toc = true
+  tocOpen = false
+  goToTop = false
+  additionalScripts = []
+
+  dateFormat = ""
+  rssFeedDescription = "full"
+
+[Languages.en-us.params.author]
+  avatar = "avatar.jpg"
+  intro = "Notes from Cyberspace"
+  name = "Lavínia \"Xenia\" Rodrigues"
+  description = "The personal writings of a amateur computer scientist"
+
+
+
+[Languages.pt-br]
+  languageName = "Português Brasileiro"
+  languageCode = "pt-br"
+  contentDir = "content/br"
+  weight = 1
+
+  [Languages.pt-br.menu]
+  [[Languages.pt-br.menu.main]]
+    pageRef = "/"
+    name = "inicio"
+    url = "/"
+    weight = 10
+  [[Languages.pt-br.menu.main]]
+    pageRef = "posts"
+    name = "posts"
+    url = "/posts/"
+    weight = 20
+  [[Languages.pt-br.menu.main]]
+    pageRef = "about"
+    name = "sobre"
+    url = "/sobre/"
+    weight = 30
+
+[Languages.pt-br.params]
+  sitename = "Notas do Cyberespaço"
+  defaultColor = "dark"
+  description = "Os escritos pessoais de uma cientista da computação amadora"
+  mainSections = ["posts"]
+  toc = true
+  tocOpen = false
+  goToTop = false
+  additionalScripts = []
+
+  dateFormat = ""
+  rssFeedDescription = "full"
+
+[Languages.pt-br.params.author]
+  avatar = "avatar.jpg"
+  intro = "Notas do Cyberespaço"
+  name = "Lavínia \"Xenia\" Rodrigues"
+  description = "Os escritos pessoais de uma cientista da computação amadora"
+
+
+
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"
