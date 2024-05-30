@@ -1,5 +1,5 @@
 +++
-title = 'Tentativas de jogar MELTY BLOOD via GSocket'
+title = 'Tunelando jogo online com WireGuard-via-GSocket'
 date = 2024-05-30
 draft = false
 +++
