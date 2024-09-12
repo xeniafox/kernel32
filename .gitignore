@@ -29,7 +29,7 @@ bin-release/
 .settings/
 
 # lock
-*.lock
+*.hugo_build.lock
 
 # Executables
 *.swf
