@@ -23,6 +23,10 @@
       name  = "kernel32";
       pname = "kernel32";
 
+      shellHook = ''
+        export PS1="(kernel32-blog) \u@\h:\w\$ "
+      '';
+
       src = ./.;
 
       nativeBuildInputs = with pkgs; [ go hugo ];
